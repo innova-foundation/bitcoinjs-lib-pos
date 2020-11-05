@@ -8,7 +8,7 @@ var networks = require('./networks')
 var Script = require('./script')
 
 function Transaction (network) {
-  this.network = network || networks.bitcoin
+  this.network = network || networks.denarius
   this.version = 1
   this.time = Math.floor(new Date().getTime() / 1000)
   this.locktime = 0
@@ -23,7 +23,7 @@ Transaction.SIGHASH_SINGLE = 0x03
 Transaction.SIGHASH_ANYONECANPAY = 0x80
 
 Transaction.fromBuffer = function (buffer, __disableAssert, network) {
-  network = network || networks.bitcoin
+  network = network || networks.denarius
   var offset = 0
   function readSlice (n) {
     offset += n

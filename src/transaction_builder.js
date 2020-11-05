@@ -85,7 +85,7 @@ function extractInput (txIn) {
 }
 
 function TransactionBuilder (network) {
-  this.network = network || networks.bitcoin
+  this.network = network || networks.denarius
   this.prevTxMap = {}
   this.prevOutScripts = {}
   this.prevOutTypes = {}
