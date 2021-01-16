@@ -65,6 +65,18 @@ module.exports = {
     dustThreshold: 0,
 	isPoS: true
   },
+  innova: {
+    magicPrefix: '\x19Innova Signed Message:\n',
+    bip32: {
+      public: 0x0488b21e,
+      private: 0x0488ade4
+    },
+    pubKeyHash: 0x66,
+    scriptHash: 0x5a,
+    wif: 0x89,
+    dustThreshold: 0,
+	isPoS: true
+  },
   peercoin: {
     messagePrefix: '\x17PPcoin Signed Message:\n',
     bip32: {

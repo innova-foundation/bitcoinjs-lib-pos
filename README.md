@@ -59,7 +59,7 @@ From your repository, create a `foobar.js` file
 ``` javascript
 var foobar = {
   base58: require('bs58'),
-  bitcoin: require('bitcoinjs-lib'),
+  bitcoin: require('bitcoinjs-lib'), // Innova - innovajs-lib
   ecurve: require('ecurve'),
   BigInteger: require('bigi'),
   Buffer: require('buffer')

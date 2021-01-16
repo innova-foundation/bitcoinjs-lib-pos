@@ -23,7 +23,7 @@ function ECPair (d, Q, options) {
   options = options || {}
 
   var compressed = options.compressed === undefined ? true : options.compressed
-  var network = options.network === undefined ? networks.denarius : options.network
+  var network = options.network === undefined ? networks.innova : options.network
 
   typeForce('Boolean', compressed)
   assert('pubKeyHash' in network, 'Unknown pubKeyHash constants for network')

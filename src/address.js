@@ -19,7 +19,7 @@ function fromBase58Check (string) {
 }
 
 function fromOutputScript (script, network) {
-  network = network || networks.denarius
+  network = network || networks.innova
 
   if (scripts.isPubKeyHashOutput(script)) return toBase58Check(script.chunks[2], network.pubKeyHash)
   if (scripts.isScriptHashOutput(script)) return toBase58Check(script.chunks[1], network.scriptHash)
